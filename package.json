@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://hailatgh.github.io/commerce_x",
+  "homepage": "https://hailatgh.github.io/commerce_x/",
   "scripts": {
     "predeploy": "vite build",
     "deploy": "gh-pages -d dist",
