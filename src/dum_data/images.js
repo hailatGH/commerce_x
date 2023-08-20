@@ -40,6 +40,8 @@ import watch_2 from "../assets/watch_2.webp"
 import watch_3 from "../assets/watch_3.webp"
 import watch_4 from "../assets/watch_4.webp"
 
+import x from "../assets/x.svg"
+
 export {
     bannerImage,
     
@@ -81,5 +83,7 @@ export {
     watch_1,
     watch_2,
     watch_3,
-    watch_4
+    watch_4,
+
+    x
 }
