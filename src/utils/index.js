@@ -1,4 +1,6 @@
 import confetti from 'canvas-confetti';
+import { initializeApp } from 'firebase/app';
+import { getAuth } from "firebase/auth";
 
 export const runFireworks = () => {
   var duration = 5 * 1000;
@@ -22,3 +24,14 @@ export const runFireworks = () => {
     confetti(Object.assign({}, defaults, { particleCount, origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 } }));
   }, 250);
 }
+
+export const app = initializeApp({
+  apiKey: "AIzaSyDwNADei-LASQbFDea9wF2YsCUFWXcJV_s",
+  authDomain: "commerce-x.firebaseapp.com",
+  projectId: "commerce-x",
+  storageBucket: "commerce-x.appspot.com",
+  messagingSenderId: "549359035182",
+  appId: "1:549359035182:web:bda2c5c6234b5b1c1290bf"
+})
+
+export const auth = getAuth(app);

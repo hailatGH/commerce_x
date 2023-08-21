@@ -7,6 +7,7 @@ import {
 } from "react-icons/ai";
 import { TiDeleteOutline } from "react-icons/ti";
 import toast from "react-hot-toast";
+import { Link } from "react-router-dom";
 
 import { useStateContext } from "../context/StateContext";
 
@@ -102,13 +103,11 @@ const Cart = () => {
               <h3>${totalPrice}</h3>
             </div>
             <div className="btn-container">
-              <button
-                type="button"
-                className="btn"
-                onClick={console.log("Clicked")}
-              >
-                Pay with Stripe
-              </button>
+              <Link to="success">
+                <button type="button" className="btn" onClick={() => setShowCart(false)}>
+                  Pay
+                </button>
+              </Link>
             </div>
           </div>
         )}
